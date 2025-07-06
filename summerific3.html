@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Summerific</title>
+    <style>
+    body {
+      background-color: turquoise;
+      }
+  </style>
+  <h1>Adventures in Summer 2017
+  </h1>  page 3 : photobook
+</head>
+<body>
+  <img class="mySlides" src="https://cdn.glitch.com/922e622e-7882-4440-8cdb-761b5a6ebf55%2FLLStubbStewart1-text.jpg?1503871685347">
+  <img class="mySlides" src="https://cdn.glitch.com/922e622e-7882-4440-8cdb-761b5a6ebf55%2FLLStubbStewart2.jpg?1502670646347">
+  <img class="mySlides" src="https://cdn.glitch.com/922e622e-7882-4440-8cdb-761b5a6ebf55%2FLLStubbStewart3.jpg?1502670645835">
+  <img class="mySlides" src="https://cdn.glitch.com/922e622e-7882-4440-8cdb-761b5a6ebf55%2FLLStubbStewart4.jpg?1502671114756">
+<!--   <img class="mySlides" src=" ">   -->
+</body>  
+  
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+</html>
